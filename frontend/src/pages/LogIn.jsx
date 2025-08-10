@@ -34,7 +34,7 @@ const Login = () => {
     // console.log("Login response token:", res.data.token);
     
 
-    localStorage.setItem('token', res.data.token);
+    localStorage.setItem('token', JSON.stringify(res.data.user));
     
     toast.success(res.data.message || "Login successful!");
     
