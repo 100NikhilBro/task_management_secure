@@ -13,7 +13,7 @@ const cors = require('cors');
 
 
 app.use(cors({
-    origin: ["http://localhost:5173", "https://yourfrontend.com"],
+    origin: ["http://localhost:5173", "https://task-management-secure-1.onrender.com"],
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     credentials: true,
 }));
